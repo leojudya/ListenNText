@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+}
+
+header {
+    height: 5%;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+figure {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    background-color: beige;
+    height: calc(100% - 2%);
+    border-radius: 5px;
+}
+
+audio {
+    width: 95%;
+    height: 100%;
+}
+
+textarea {
+    margin: auto;
+    max-width: 1440px;
+    width: 60%;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    padding: 0.5%;
+    height: 85vh;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    width: 100px;
+  }
+  #dropdown-menu li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+
+  svg {
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
