@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("keyup", (e) => {
     if (e.key === "Escape") {
       if (audio.paused) {
+        audio.currentTime = audio.currentTime - 2;
         audio.play();
       } else {
         audio.pause();
