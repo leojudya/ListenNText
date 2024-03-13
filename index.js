@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const uploadBtn = document.getElementById('upload-button');
   const playRate = document.getElementById('play-rate');
 
+  textarea.value = localStorage.getItem('text') ?? "";
   textarea.focus();
 
   window.addEventListener("keyup", (e) => {
@@ -49,6 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     playRate.addEventListener('change', () => {
       audio.playbackRate = playRate.value;
+    })
+
+    document.addEventListener('visibilitychange', () => {
+      localStorage.setItem('text', textarea.value);
     })
 });
 
