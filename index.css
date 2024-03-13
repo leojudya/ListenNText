@@ -22,8 +22,14 @@ main {
 }
 
 audio {
-    width: 95%;
+    width: 93%;
     height: 100%;
+}
+
+input#play-rate {
+    height: 100%;
+    width: 2%;
+    margin-right: 2px;
 }
 
 textarea {
